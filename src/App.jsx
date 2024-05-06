@@ -1,9 +1,9 @@
-import Komponen from "./Materi/Komponen"
+import Portfolio from "./Tugas/Portfolio"
 
 export default function App() {
   return (
     <div>
-      <Komponen />
+      <Portfolio />
     </div>
   )
 }
