@@ -1,9 +1,9 @@
-import Portfolio from "./Tugas/Portfolio"
+import FormValidation from "./Tugas/FormValidation";
 
 export default function App() {
   return (
     <div>
-      <Portfolio />
+      <FormValidation />
     </div>
-  )
+  );
 }
