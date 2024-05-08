@@ -3,7 +3,9 @@ import * as yup from "yup";
 
 export default function FormValidation() {
   function registerUser() {
-    alert(formik.values.email);
+    alert(
+      `email : ${formik.values.email} \n password: ${formik.values.password}`
+    );
   }
 
   const formik = useFormik({
