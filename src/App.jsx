@@ -1,9 +1,9 @@
-import FormValidation from "./Tugas/FormValidation";
+import NewsApp from "./Tugas/NewsApp";
 
 export default function App() {
   return (
     <div>
-      <FormValidation />
+      <NewsApp />
     </div>
   );
 }
