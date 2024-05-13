@@ -36,9 +36,13 @@ export default function FormValidation() {
       className="d-flex justify-content-center align-items-center"
       style={{ height: "100vh" }}
     >
-      <form onSubmit={formik.handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
+      <form
+        onSubmit={formik.handleSubmit}
+        style={{ width: "100%", maxWidth: "400px" }}
+      >
+        <h2 className="text-center">Login</h2>
+        <div className="mb-3">
+          <label className="form-label">Email address</label>
           <input
             type="email"
             className="form-control"
@@ -49,11 +53,13 @@ export default function FormValidation() {
             onChange={handleForm}
           />
           {formik.touched.email && formik.errors.email ? (
-            <div className="text-danger">{formik.errors.email}</div>
+            <div className="text-danger" style={{ marginLeft: "5px" }}>
+              {formik.errors.email}
+            </div>
           ) : null}
         </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
+        <div className="mb-3">
+          <label className="form-label">Password</label>
           <input
             type="password"
             className="form-control"
@@ -64,10 +70,17 @@ export default function FormValidation() {
             onChange={handleForm}
           />
           {formik.touched.password && formik.errors.password ? (
-            <div className="text-danger">{formik.errors.password}</div>
+            <div className="text-danger" style={{ marginLeft: "5px" }}>
+              {formik.errors.password}
+            </div>
           ) : null}
         </div>
-        <button type="submit" className="btn btn-primary">
+
+        <button
+          type="submit"
+          className="btn btn-primary"
+          style={{ width: "100%" }}
+        >
           Login
         </button>
       </form>
